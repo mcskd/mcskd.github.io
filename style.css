@@ -501,7 +501,7 @@ header {
 }
 
 #sec01_flex {
-  height: 725px;
+  height: 525px;
   position: relative;
 }
 
@@ -566,6 +566,10 @@ header {
 
   #sec01 {
     margin: 180px 0 ;
+  }
+
+  #sec01_flex {
+    height: 725px;
   }
 
   #sec01_flex .text_box {
