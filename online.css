@@ -104,7 +104,6 @@ p {
   opacity: 0.7;
 }
 
-
 /*-------------------------------------------
 ナビゲーションバー
 -------------------------------------------*/
@@ -230,42 +229,29 @@ p {
 /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
-.contact_wrapper {
+.online_wrapper {
   background-image: url(./img/fv_pic.png);
   background-size: cover;
   background-position: center;
   min-height: 40vh;
 }
 
-.contact_text {
+.online_text {
   color: var(--clr-base);
   text-align: center;
   padding-top: 106px;
   line-height: 1.1;
 }
 
-.contact_text h1{
+.online_text h1{
   font-family: var(--ff-en-letter);
   font-size: var(--fnts--ext);
   font-weight: var(--fnt--wt--400);
 }
 
-.contact_text h2 {
+.online_text h2 {
   font-size: var(--fnts--bg);
   font-weight: var(--fnt--wt--400);
-}
-
-/*-------------------------------------------
-フォーム
--------------------------------------------*/
-#contact {
-  background-color: var(--clr-primary);
-  padding-top: 54px;
-  padding-bottom: 74px;
-}
-
-#contact .button {
-  margin: auto;
 }
 
 
@@ -349,9 +335,8 @@ p {
       width: 192.58px;
       height: 18.61px;
     }
-
-    
   }
+
 
 /*-------------------------------------------
 フッター
