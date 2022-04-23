@@ -50,12 +50,32 @@ li {
   list-style: none;
 }
 
+.wrapper {
+  background-color: var(--clr-primary);
+  padding-bottom: 3em;
+}
+
 .sec_inner {
   width: min(90%, 1080px);
   margin: auto;
 }
 
+.flex {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-bottom: 3em;
+}
 
+@media (min-width: 768px) {
+  .flex  {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    }
+}
 
 /*-------------------------------------------
 フォントファミリー
@@ -80,6 +100,7 @@ p {
   width: 250px;
   height: 70px;
   background-color: var(--clr-neutral-400);
+  margin: auto;
 }
 
 .button p {
@@ -253,6 +274,119 @@ p {
   font-size: var(--fnts--bg);
   font-weight: var(--fnt--wt--400);
 }
+
+
+/*-------------------------------------------
+台湾カステラ
+-------------------------------------------*/
+
+#castella h2 {
+  display: none;
+}
+
+
+#castella  .subtitle  {
+  z-index: 10;
+  line-height: 8;
+  text-align: center;
+  position: relative;
+  }
+
+  #castella .subtitle img {
+    width: 109.46px;
+    height: 14.56px;
+  }
+  
+
+  #castella  .subtitle::after {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    display: block;
+    width: 100.54px;
+    height: 67.53px;
+    background-image: url(./img/Castella.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  
+
+
+
+  @media (min-width: 768px) {
+    #castella .subtitle img {
+      width: 150.51px;
+      height: 20px;
+    }
+
+    #castella  .subtitle::after {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 175px;
+      height: 117px;
+    }
+  
+  }
+
+/*-------------------------------------------
+店内限定メニュー
+-------------------------------------------*/
+
+
+#eatin h2 {
+  display: none;
+}
+
+
+#eatin  .subtitle  {
+  z-index: 10;
+  line-height: 8;
+  text-align: center;
+  position: relative;
+  }
+
+  #eatin .subtitle img {
+    width: 109.46px;
+    height: 14.56px;
+  }
+  
+
+  #eatin  .subtitle::after {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    display: block;
+    width: 100.54px;
+    height: 67.53px;
+    background-image: url(./img/Eat\ in\ Only.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+  @media (min-width: 768px) {
+    #eatin .subtitle img {
+      width: 150.51px;
+      height: 20px;
+    }
+
+    #eatin  .subtitle::after {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 175px;
+      height: 117px;
+    }
+  
+  }
 
 
 /*-------------------------------------------
