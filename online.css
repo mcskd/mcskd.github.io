@@ -59,8 +59,19 @@ li {
   background-color: var(--clr-primary);
 }
 
+.flex_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-
+@media (min-width: 768px) {
+  .flex_item {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
 /*-------------------------------------------
 フォントファミリー
 -------------------------------------------*/
@@ -294,6 +305,25 @@ p {
   background-repeat: no-repeat;
 }
 
+.spiner {
+  display: flex;
+  align-items: center;
+  width: 185px;
+  height: 5px;
+  background-color: var(--clr-base);
+}
+
+.spiner input {
+  border: none;
+  outline: none;
+}
+
+.spiner span {
+  font-family: var(--ff-pc-base);
+  font-weight: var(--fnt--wt--600);
+  font-size: var(--fnts--bger);
+}
+
 @media (min-width: 768px) {
   #lists .subtitle img {
     width: 150.51px;
@@ -306,6 +336,11 @@ p {
     transform: translate(-50%, -50%);
     width: 175px;
     height: 117px;
+  }
+
+  .spiner {
+    width: 210px;
+    height: 52px;
   }
 
 }
