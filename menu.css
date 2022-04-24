@@ -33,10 +33,19 @@ html {
 }
 
 body {
-  
+  font-family: var(--ff-pc-base);
+  font-size: var(--fnts--bger);
   font-size: 1rem;
 }
 
+h2 {
+  color: var(--clr-neutral-700);
+  font-weight: var(--fnt--wt--600);
+}
+
+p {
+  color: var(--clr-neutral-700);
+}
 
 a {
   text-decoration: none;
@@ -48,6 +57,10 @@ img {
 
 li {
   list-style: none;
+}
+
+.invisible {
+  display: none;
 }
 
 .wrapper {
@@ -64,8 +77,12 @@ li {
   width: 80%;
   display: flex;
   flex-direction: column;
+  flex: 1;
   margin: auto;
   padding-bottom: 3em;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 16px;
 }
 
 @media (min-width: 768px) {
@@ -97,6 +114,9 @@ p {
 ボタン
 -------------------------------------------*/
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 250px;
   height: 70px;
   background-color: var(--clr-neutral-400);
@@ -117,9 +137,6 @@ p {
   margin-left: 11px;
 }
 
-.button p{
-  padding-top: 18px;
-}
 
 .button:hover {
   opacity: 0.7;
@@ -280,8 +297,23 @@ p {
 台湾カステラ
 -------------------------------------------*/
 
+#castella .flex > * {
+  margin-bottom: 32px;
+}
+
+#castella .flex .item_img {
+  max-width: 340px;
+  max-height: 300px;
+}
+
+#castella .flex .item_img img {
+  width: 100%;
+  height: 300px;
+}
+
+
 #castella h2 {
-  display: none;
+  font-size: var(--fnts--bger);
 }
 
 
@@ -313,11 +345,12 @@ p {
     background-repeat: no-repeat;
   }
 
-  
-
-
 
   @media (min-width: 768px) {
+    #castella .flex > * + * {
+      margin-left: 2rem;
+    }
+
     #castella .subtitle img {
       width: 150.51px;
       height: 20px;
@@ -336,11 +369,6 @@ p {
 /*-------------------------------------------
 店内限定メニュー
 -------------------------------------------*/
-
-
-#eatin h2 {
-  display: none;
-}
 
 
 #eatin  .subtitle  {
