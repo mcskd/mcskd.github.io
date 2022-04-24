@@ -55,6 +55,31 @@ li {
   margin: auto;
 }
 
+#contact {
+  font-family: var(--ff-pc-base);
+  font-size: var(--fnts--smal);
+}
+
+@media (min-width: 768px) {
+  #contact {
+    font-size: var(--fnts--bger);
+  }
+}
+
+.flex {
+  display: flex;
+  flex: 1;
+  margin-bottom: 40px;
+}
+
+.flex:nth-child(4) {
+  margin-bottom: 46px;
+}
+
+.flex:nth-child(5) {
+  margin-bottom: 57px;
+}
+
 
 
 /*-------------------------------------------
@@ -77,31 +102,43 @@ p {
 ボタン
 -------------------------------------------*/
 .button {
-  width: 250px;
-  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 60px;
   background-color: var(--clr-neutral-400);
 }
 
 .button p {
   color: var(--clr-base);
-  font-family: var(--ff-en-letter);
+  font-family: var(--ff-pc-base);
   font-weight: var(--fnt--wt--500);
   text-align: center;
 }
 
 .button img {
-  width: 28px;
-  height: 16px;
+  width: 30px;
+  height: 8px;
   box-sizing: border-box;
   margin-left: 11px;
 }
 
-.button p{
-  padding-top: 18px;
-}
 
 .button:hover {
   opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+  .button {
+    width: 250px;
+    height: 70px;
+  }
+
+  .button img {
+    width: 28px;
+    height: 16px;
+  }
 }
 
 
@@ -264,10 +301,64 @@ p {
   padding-bottom: 74px;
 }
 
+#contact label {
+  color: var(--clr-base);
+  width: 20%;
+}
+
+#contact input {
+  height: 45px;
+}
+
+#contact textarea {
+  height: 200px;
+}
+
+#contact input,
+#contact textarea {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  width: 70%;
+  margin-left: 45px;
+}
+
+#contact .necessary,
+#contact .voluntary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 38px;
+  margin-left: 30px;
+  border-radius: 10px;
+  color: var(--clr-base);
+  background-color: var(--clr-neutral-400);
+}
+
+#contact .voluntary {
+  background-color: #FFB1AE;
+}
+
 #contact .button {
   margin: auto;
 }
 
+
+@media (min-width: 768px){
+  #contact input {
+    height: 51px;
+  }
+  
+  #contact textarea {
+    height: 230px;
+  }
+
+  #contact .necessary {
+    height: 45px;
+  }
+}
 
 /*-------------------------------------------
 オンラインショップ
