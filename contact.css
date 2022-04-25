@@ -60,25 +60,18 @@ li {
   font-size: var(--fnts--smal);
 }
 
+
 @media (min-width: 768px) {
   #contact {
     font-size: var(--fnts--bger);
   }
+
+  
 }
 
-.flex {
-  display: flex;
-  flex: 1;
-  margin-bottom: 40px;
-}
 
-.flex:nth-child(4) {
-  margin-bottom: 46px;
-}
 
-.flex:nth-child(5) {
-  margin-bottom: 57px;
-}
+
 
 
 
@@ -303,16 +296,9 @@ p {
 
 #contact label {
   color: var(--clr-base);
-  width: 20%;
 }
 
-#contact input {
-  height: 45px;
-}
 
-#contact textarea {
-  height: 200px;
-}
 
 #contact input,
 #contact textarea {
@@ -320,8 +306,6 @@ p {
   border: none;
   outline: none;
   border-radius: 10px;
-  width: 70%;
-  margin-left: 45px;
 }
 
 #contact .necessary,
@@ -329,9 +313,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10%;
   height: 38px;
-  margin-left: 30px;
   border-radius: 10px;
   color: var(--clr-base);
   background-color: var(--clr-neutral-400);
@@ -346,19 +328,7 @@ p {
 }
 
 
-@media (min-width: 768px){
-  #contact input {
-    height: 51px;
-  }
-  
-  #contact textarea {
-    height: 230px;
-  }
 
-  #contact .necessary {
-    height: 45px;
-  }
-}
 
 /*-------------------------------------------
 オンラインショップ
