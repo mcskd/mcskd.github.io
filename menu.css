@@ -350,7 +350,6 @@ p {
 
   @media (min-width: 768px) {
 
-
     #castella .flex > * {
       width: 33%;
     }
@@ -379,6 +378,17 @@ p {
   
   }
 
+  @media screen and (min-width:768px) and ( max-width:1024px)  {
+
+    .flex {
+      flex-wrap: wrap;
+    }
+
+    #castella .flex > * {
+      width: 45%;
+    }
+
+  }
 /*-------------------------------------------
 店内限定メニュー
 -------------------------------------------*/
