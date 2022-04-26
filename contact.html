@@ -63,32 +63,67 @@
         <div class="sec_inner">
           <form action="" method="get" class="contact_form">
             <div class="contact_form">
+             <div id="your_name" class="flex">
+               <div class="label_item">
                 <label for="name">氏名</label>
+                <div class="hidden">
+                  <p>必須</p>
+                </div>
+              </div>
                 <input type="text" name="name" id="name">
                 <div class="necessary">
                   <p>必須</p>
                 </div>
-                <label for="name">フリガナ</label>
+              </div>
+              <div id="rubi" class="flex">
+                <div class="label_item">
+                 <label for="name">フリガナ</label>
+                 <div class="hidden">
+                  <p>必須</p>
+                </div>
+                </div>
                 <input type="text" name="name" id="name">
                 <div class="necessary">
                   <p>必須</p>
                 </div>
-               <label for="email">メールアドレス</label>
+              </div>
+              <div id="mail" class="flex">
+                <div class="label_item">
+                  <label for="email">メールアドレス</label>
+                  <div class="hidden">
+                    <p>必須</p>
+                  </div>
+                </div>
                <input type="text" name="email" id="email">
                 <div class="necessary">
                   <p>必須</p>
                 </div>
-                 <label for="tel">電話番号</label>
+              </div>
+               <div id="phone_number" class="flex">
+                 <div class="label_item">
+                  <label for="tel">電話番号</label>
+                  <div class="hidden">
+                    <p>任意</p>
+                  </div>
+                 </div>
                   <input type="text" name="tel" id="tel">
                   <div class="voluntary">
                    <p>任意</p>
                   </div>
-                 <label for="letter">ご用件</label>
+                </div>
+                <div id="message" class="flex">
+                  <div class="label_item">
+                    <label for="letter">ご用件</label>
+                    <div class="hidden hidden_light">
+                      <p>必須</p>
+                    </div>
+                  </div>
                   <textarea name="letter" rows="5" cols="50"></textarea>
                   <div class="necessary">
                     <p>必須</p>
                   </div>
-              </div>
+                </div>
+            </div>
            </form>
           <div class="button">
             <a href="#">

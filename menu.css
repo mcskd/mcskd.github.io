@@ -74,7 +74,7 @@ li {
 }
 
 .flex {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -299,11 +299,13 @@ p {
 
 #castella .flex > * {
   margin-bottom: 32px;
+  width: 100%;
 }
 
 #castella .flex .item_img {
   max-width: 340px;
   max-height: 300px;
+  margin: auto;
 }
 
 #castella .flex .item_img img {
@@ -347,6 +349,12 @@ p {
 
 
   @media (min-width: 768px) {
+
+
+    #castella .flex > * {
+      width: 33%;
+    }
+
     #castella .flex > * + * {
       margin-left: 2rem;
     }
@@ -362,6 +370,11 @@ p {
       transform: translate(-50%, -50%);
       width: 175px;
       height: 117px;
+    }
+
+    #castella .flex .item_img img {
+      width: 100%;
+      object-fit: cover;
     }
   
   }
