@@ -452,6 +452,37 @@ p {
     background-repeat: no-repeat;
   }
 
+  #eatin .flex > * + * {
+    margin-left: 0;
+  }
+
+  #eatin .flex > *:nth-child(1) {
+    margin-bottom: 18px;
+  }
+
+  
+  .line01 {
+    height: 3px;
+    width: 80%;
+    background-color: #FE7E08;
+    margin: 8px auto 20px;
+  }
+
+  .line02 {
+    height: 3px;
+    width: 80%;
+    background-color: #D18057;
+    margin: 8px auto 20px;
+  }
+
+  #eatin h2 {
+    line-height: 1.4;
+  }
+
+  #eatin p {
+    line-height: 1.8;
+  }
+  
 
   @media (min-width: 768px) {
     #eatin .subtitle img {
@@ -466,6 +497,15 @@ p {
       width: 175px;
       height: 117px;
     }
+
+    #eatin .item_img {
+      margin-bottom: 38px;
+    }
+
+    #eatin .flex > * + * {
+      margin-left: 51px;
+    }
+  
   
   }
 
