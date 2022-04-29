@@ -22,8 +22,8 @@
 
   --fnts--ext: 3.9375rem;
   --fnts--bg: 2rem;
-  --fnts--mid: 1.4375rem;
   --fnts--bger: 1.375rem;
+  --fnts--mid: 1.1rem;
   --fnts--noml: 1rem;
   --fnts--smal: 0.75rem;
 }
@@ -36,11 +36,6 @@ body {
   font-family: var(--ff-pc-base); 
 }
 
-@media (width: 768px) {
-  body {
-    font-size: 1em;
-  }
-}
 
 h2 {
   color: var(--clr-neutral-700);
@@ -67,9 +62,9 @@ li {
   display: none;
 }
 
-.wrapper {
-  background-color: var(--clr-primary);
-  padding-bottom: 3em;
+
+.background {
+  background: linear-gradient(180deg, rgba(255, 222, 35, 0.5) 4.71%, #FFE23E 100%);
 }
 
 .sec_inner {
@@ -90,6 +85,11 @@ li {
 }
 
 @media (min-width: 768px) {
+
+  .background {
+    background-color: var(--clr-primary);
+  }
+
   .flex  {
     flex-direction: row;
     justify-content: center;
@@ -115,14 +115,42 @@ p {
 }
 
 /*-------------------------------------------
+フォントサイズ
+-------------------------------------------*/
+.menu_wrapper h1 {
+  font-size: var(--fnts--noml);
+}
+
+.menu_wrapper h2 {
+  font-size: var(--fnts--smal);
+}
+
+
+
+@media (min-width: 768px) {
+  .menu_wrapper h1 {
+    font-size: var(--fnts--ext);
+  }
+
+  .menu_wrapper h2 {
+    font-size: var(--fnts--bg);
+  }
+
+  .wrapper h2 {
+    font-size: var(--fnts--mid);
+  }
+
+  
+}
+/*-------------------------------------------
 ボタン
 -------------------------------------------*/
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
-  height: 70px;
+  width: 279px;
+  height: 50px;
   background-color: var(--clr-neutral-400);
   margin: auto;
 }
@@ -146,16 +174,24 @@ p {
   opacity: 0.7;
 }
 
+@media (min-width:768px) {
+  .button {
+    width: 320px;
+    height: 70px;
+  }
+}
+
 /*-------------------------------------------
 ナビゲーションバー
 -------------------------------------------*/
 #nav_bar {
   width: 100%;
-  min-height: 10vh;
+  min-height: 57px;
   background-color: rgba(#000, #000, #000, 0);
 }
 
 .header_inner {
+  padding-top: 7px;
   box-sizing: border-box;
   z-index: 100;
   position: fixed;
@@ -234,9 +270,17 @@ p {
 
 @media (min-width: 768px) {
 
+  #nav_bar {
+    min-height: 0;
+  }
+
   #nav_bar .button{
     display: block;
     margin-left: 33.8px;
+  }
+
+  .header_inner {
+    padding-top: 0;
   }
 
   #social a + a {
@@ -272,39 +316,56 @@ p {
 ヘッダー
 -------------------------------------------*/
 .menu_wrapper {
-  background-image: url(./img/fv_pic.png);
+  background-image: url(./img/Rectangle\ 42.png);
   background-size: cover;
   background-position: center;
-  min-height: 40vh;
+  min-height: 20vh;
+  padding-bottom: 30px;
 }
 
 .menu_text {
   color: var(--clr-base);
   text-align: center;
-  padding-top: 106px;
+  padding-top: 50px;
   line-height: 1.1;
 }
 
 .menu_text h1{
   font-family: var(--ff-en-letter);
-  font-size: var(--fnts--ext);
   font-weight: var(--fnt--wt--400);
 }
 
 .menu_text h2 {
-  font-size: var(--fnts--bg);
   font-weight: var(--fnt--wt--400);
+  color: var(--clr-base);
+}
+
+@media (min-width: 768px) {
+
+  .menu_wrapper {
+    min-height: 40vh;
+    padding-bottom: 106px;
+  }
+
+  .menu_text {
+    padding-top: 106px;
+  }
+
 }
 
 
 /*-------------------------------------------
 台湾カステラ
 -------------------------------------------*/
+#castella {
+  padding-top: 28.68px;
+  padding-bottom: 32px;
+}
+
 #castella h2 {
   margin-bottom: 1em;
   padding-bottom: 10px;
   border-bottom: solid #ffffff 3px;
-  font-size: 1.1rem;
   width: 60%;
   margin: auto;
 }
@@ -323,7 +384,6 @@ p {
 
 #castella p {
   line-height: 1.7;
-  font-size: 1.375;
 }
 
 #castella .flex > * {
@@ -346,9 +406,9 @@ p {
 
 #castella  .subtitle  {
   z-index: 10;
-  line-height: 8;
   text-align: center;
   position: relative;
+  line-height: 5;
   }
 
   #castella .subtitle img {
@@ -360,23 +420,34 @@ p {
   #castella  .subtitle::after {
     z-index: -1;
     position: absolute;
-    top: 50%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     content: "";
     display: block;
-    width: 100.54px;
-    height: 67.53px;
+    width: 171.12px;
+    height: 55.19px;
     background-image: url(./img/Castella.png);
     background-size: contain;
     background-repeat: no-repeat;
   }
 
 
+  #castella .button {
+    width: 279px;
+  }
+
   @media (min-width: 768px) {
+
+    #castella {
+      padding-top: 62.45px;
+      padding-bottom: 60px;
+    }
+
     #castella h2 {
       width: 100%;
     }
+
 
     #castella .flex > * {
       width: 33%;
@@ -387,16 +458,20 @@ p {
     }
 
     #castella .subtitle img {
-      width: 150.51px;
-      height: 20px;
+      width: 183.17px;
+      height: 28.99px;
+    }
+
+    #castella  .subtitle {
+      line-height: 9;
     }
 
     #castella  .subtitle::after {
-      top: 50%;
+      top: 38%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 175px;
-      height: 117px;
+      width: 297.71px;
+      height: 96px;
     }
 
     #castella .flex .item_img img {
@@ -416,12 +491,17 @@ p {
       width: 45%;
     }
 
+    #castella .button {
+      width: 320px;
+    }
+  
+
   }
 /*-------------------------------------------
 店内限定メニュー
 -------------------------------------------*/
-#eatin h2 {
-  font-size: 1.1rem;
+#eatin {
+  padding-bottom: 42px;
 }
 
 #eatin  .subtitle  {
@@ -432,8 +512,8 @@ p {
   }
 
   #eatin .subtitle img {
-    width: 109.46px;
-    height: 14.56px;
+    width: 125.6px;
+    height: 14.43px;
   }
   
 
@@ -445,8 +525,8 @@ p {
     transform: translate(-50%, -50%);
     content: "";
     display: block;
-    width: 100.54px;
-    height: 67.53px;
+    width: 256.73px;
+    height: 73px;
     background-image: url(./img/Eat\ in\ Only.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -460,6 +540,9 @@ p {
     margin-bottom: 18px;
   }
 
+  #eatin .item_img {
+    margin-bottom: 17.55px;
+  }
   
   .line01 {
     height: 3px;
@@ -485,17 +568,25 @@ p {
   
 
   @media (min-width: 768px) {
+    #eatin {
+      padding-bottom: 70px;
+    }
+
+    #eatin  .subtitle {
+      margin-bottom: 61px;
+    }
+
     #eatin .subtitle img {
-      width: 150.51px;
-      height: 20px;
+      width: 251.21px;
+      height: 28.86px;
     }
 
     #eatin  .subtitle::after {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 175px;
-      height: 117px;
+      width: 462.3px;
+      height: 127px;
     }
 
     #eatin .item_img {
@@ -555,7 +646,7 @@ p {
   }
 
   #online_shop .button {
-    width: 345px;
+    width: 279px;
     margin: auto;
   }
 
@@ -590,6 +681,11 @@ p {
       width: 192.58px;
       height: 18.61px;
     }
+
+    #online_shop .button {
+      width: 345px;
+    }
+  
   }
 
 
