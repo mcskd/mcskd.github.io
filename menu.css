@@ -20,10 +20,10 @@
   --fnt--wt--500: 500;
   --fnt--wt--400: 400;
 
-  --fnts--ext: 3.9375rem;
+  --fnts--ext: 2.875rem;
   --fnts--bg: 2rem;
+  --fnts--mid: 1.4375rem;
   --fnts--bger: 1.375rem;
-  --fnts--mid: 1.1rem;
   --fnts--noml: 1rem;
   --fnts--smal: 0.75rem;
 }
@@ -125,7 +125,25 @@ p {
   font-size: var(--fnts--smal);
 }
 
+.wrapper h2 {
+  font-size: var(--fnts--noml);
+}
 
+.wrapper p {
+  font-size: var(--fnts--smal);
+}
+
+.online_shop_letter p {
+  font-size: var(--fnts--smal);
+}
+
+#footer_info .footer_flex{
+  font-size: var(--fnts--smal);
+}
+
+.copyright {
+  font-size: var(--fnts--smal);
+}
 
 @media (min-width: 768px) {
   .menu_wrapper h1 {
@@ -137,9 +155,24 @@ p {
   }
 
   .wrapper h2 {
-    font-size: var(--fnts--mid);
+    font-size: var(--fnts--bger);
   }
 
+  .wrapper p {
+    font-size: var(--fnts--noml);
+  }
+
+  .online_shop_letter p {
+    font-size: var(--fnts--noml);
+  }
+
+  #footer_info .footer_flex {
+    font-size: var(--fnts--noml);
+  }
+
+  .copyright {
+    font-size: var(--fnts--noml);
+  }
   
 }
 /*-------------------------------------------
