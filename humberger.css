@@ -1,0 +1,64 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --clr-base: rgb(255,255,255);
+  --clr-primary: rgb(255, 226, 62);
+  --clr-neutral-400: rgb(244,46,38);
+  --clr-neutral-700: rgb(109,38,22);
+
+  --ff-en-letter: 'Pridi';
+  --ff-pc-base: "Yu Mincho", "YuMincho", serif;
+
+  --fnt--wt--600: 600;
+  --fnt--wt--500: 500;
+  --fnt--wt--400: 400;
+
+  --fnts--ext: 2.875rem;
+  --fnts--bg: 2rem;
+  --fnts--mid: 1.4375rem;
+  --fnts--bger: 1.375rem;
+  --fnts--noml: 1rem;
+  --fnts--smal: 0.75rem;
+}
+
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1rem;
+}
+
+h2 {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-neutral-700);
+}
+
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.open_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
