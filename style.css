@@ -218,7 +218,7 @@ p {
 
 .header_inner {
   box-sizing: border-box;
-  z-index: 100;
+  z-index: 50;
   position: fixed;
   top: 0;
   left: 50%;

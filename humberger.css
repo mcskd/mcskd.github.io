@@ -47,27 +47,47 @@ img {
   max-width: 100%;
 }
 
-a {
+
+
+
+
+.open_links {
+  padding: 120px 0 120px;
+  z-index: 100;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--clr-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.open_links a {
   color: var(--clr-neutral-700);
   font-family: var(--ff-pc-base);
   font-size: var(--fnts--bger);
   font-weight: var(--fnt--wt--400);
 }
 
-a:hover {
+.open_links a:hover {
   color: #FFFFFF;
-}
-
-li {
-  list-style: none;
-}
-
-li:hover {
   border-bottom: solid #FFFFFF 3px;
   padding-bottom: 10px; 
 }
 
- li:nth-child(1) a::before{
+a:nth-child(n):hover::before {
+  color: var(--clr-base);
+}
+
+.open_links ul > * + * {
+  padding-top: 20px;
+}
+
+li:nth-child(1) a::before{
    display: block;
   content: "Concept";
   font-family: var(--ff-en-letter);
@@ -128,28 +148,12 @@ li:nth-child(6) a:before{
   color: var(--clr-neutral-700);
 }
 
-a:nth-child(n):hover::before {
-  color: var(--clr-base);
-}
-
-
-.open_links {
-  padding: 120px 0 120px;
+.header_inner {
   z-index: 101;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--clr-primary);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
-ul > * + * {
-  padding-top: 20px;
-}
+
+
+
 
 
