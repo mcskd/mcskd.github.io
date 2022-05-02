@@ -47,6 +47,26 @@ img {
   max-width: 100%;
 }
 
+.header_inner {
+  z-index: 101;
+}
+
+.humberger .line{
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.humberger.active .middle {
+  opacity: 0;
+}
+
+.humberger.active .top {
+  transform: translateY(28px) rotate(45deg);
+}
+
+.humberger.active .bottom {
+  transform: translateY(-28px) rotate(-45deg);
+}
+
 
 
 
@@ -148,9 +168,6 @@ li:nth-child(6) a:before{
   color: var(--clr-neutral-700);
 }
 
-.header_inner {
-  z-index: 101;
-}
 
 
 
