@@ -47,22 +47,91 @@ img {
   max-width: 100%;
 }
 
-li {
-  list-style: none;
-}
-
-.en {
-  font-family: var(--ff-en-letter);
-  font-size: var(--fnts--ext);
-  font-weight: var(--fnt--wt--400);
-  line-height: 1.5;
-}
-
-.ja {
+a {
+  color: var(--clr-neutral-700);
   font-family: var(--ff-pc-base);
   font-size: var(--fnts--bger);
   font-weight: var(--fnt--wt--400);
 }
+
+a:hover {
+  color: #FFFFFF;
+}
+
+li {
+  list-style: none;
+}
+
+li:hover {
+  border-bottom: solid #FFFFFF 3px;
+  padding-bottom: 10px; 
+}
+
+ li:nth-child(1) a::before{
+   display: block;
+  content: "Concept";
+  font-family: var(--ff-en-letter);
+  font-size: var(--fnts--ext);
+  font-weight: var(--fnt--wt--400);
+  line-height: 1.5;
+  color: var(--clr-neutral-700);
+}
+
+
+li:nth-child(2) a:before{
+  display: block;
+  content: "Menu";
+  font-family: var(--ff-en-letter);
+  font-size: var(--fnts--ext);
+  font-weight: var(--fnt--wt--400);
+  line-height: 1.5;
+  color: var(--clr-neutral-700);
+}
+
+li:nth-child(3) a:before{
+  display: block;
+  content: "Tips";
+  font-family: var(--ff-en-letter);
+  font-size: var(--fnts--ext);
+  font-weight: var(--fnt--wt--400);
+  line-height: 1.5;
+  color: var(--clr-neutral-700);
+}
+
+li:nth-child(4) a:before{
+  display: block;
+  content: "Access";
+  font-family: var(--ff-en-letter);
+  font-size: var(--fnts--ext);
+  font-weight: var(--fnt--wt--400);
+  line-height: 1.5;
+  color: var(--clr-neutral-700);
+}
+
+li:nth-child(5) a:before{
+  display: block;
+  content: "Contact";
+  font-family: var(--ff-en-letter);
+  font-size: var(--fnts--ext);
+  font-weight: var(--fnt--wt--400);
+  line-height: 1.5;
+  color: var(--clr-neutral-700);
+}
+
+li:nth-child(6) a:before{
+  display: block;
+  content: "Online Shop";
+  font-family: var(--ff-en-letter);
+  font-size: var(--fnts--ext);
+  font-weight: var(--fnt--wt--400);
+  line-height: 1.5;
+  color: var(--clr-neutral-700);
+}
+
+a:nth-child(n):hover::before {
+  color: var(--clr-base);
+}
+
 
 .open_links {
   padding: 120px 0 120px;
@@ -79,18 +148,8 @@ li {
   text-align: center;
 }
 
-.open_links > * + * {
+ul > * + * {
   padding-top: 20px;
 }
 
-.open_links .letter {
-  text-decoration: none;
-  color: var(--clr-neutral-700);
-  padding-bottom: 10px;
-}
-
-.open_links .letter:hover {
-  color: var(--clr-base);
-  border-bottom: solid 3px #ffffff;
-}
 
