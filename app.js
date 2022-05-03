@@ -11,3 +11,9 @@ document.querySelectorAll(".links_item").forEach(n => n.addEventListener("click"
   nav_menu.classList.remove("active");
 }))
 
+
+document.querySelectorAll(".links_item").forEach(n => window.addEventListener("scroll", () => {
+  humberger.classList.remove("active");
+  nav_menu.classList.remove("active");
+}))
+
