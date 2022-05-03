@@ -276,6 +276,7 @@ p {
 
 .humberger {
   margin-left: 19.54px;
+  cursor: pointer;
 }
 
 .humberger .line {

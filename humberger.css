@@ -33,11 +33,6 @@ html {
   font-size: 75%;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 100%;
-  }
-}
 
 body {
   font-size: 1rem;
@@ -53,6 +48,7 @@ img {
 
 .humberger .line{
   -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .humberger.active .middle {
@@ -60,30 +56,48 @@ img {
 }
 
 .humberger.active .top {
-  transform: translateY(28px) rotate(45deg);
+  transform: translateY(10px) rotate(45deg);
 }
 
 .humberger.active .bottom {
-  transform: translateY(-28px) rotate(-45deg);
+  transform: translateY(-10px) rotate(-45deg);
 }
 
 
 
+@media (min-width: 768px) {
+  html {
+    font-size: 100%;
+  }
+
+  .humberger.active .top {
+    transform: translateY(28px) rotate(45deg);
+  }
+  
+  .humberger.active .bottom {
+    transform: translateY(-28px) rotate(-45deg);
+  }
+  
+}
 
 
 .open_links {
   padding: 120px 0 120px;
   z-index: 100;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
+  top: -110%;
   background-color: var(--clr-primary);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  transition: 0.3s;
+}
+
+.open_links.active {
+  top: 0;
 }
 
 .open_links a {
