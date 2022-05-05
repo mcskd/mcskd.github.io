@@ -46,20 +46,20 @@ img {
   z-index: 101;
 }
 
-.humberger .line{
+.humburger .line{
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-.humberger.active .middle {
+.humburger.active .middle {
   opacity: 0;
 }
 
-.humberger.active .top {
+.humburger.active .top {
   transform: translateY(10px) rotate(45deg);
 }
 
-.humberger.active .bottom {
+.humburger.active .bottom {
   transform: translateY(-10px) rotate(-45deg);
 }
 
@@ -70,11 +70,11 @@ img {
     font-size: 100%;
   }
 
-  .humberger.active .top {
+  .humburger.active .top {
     transform: translateY(28px) rotate(45deg);
   }
   
-  .humberger.active .bottom {
+  .humburger.active .bottom {
     transform: translateY(-28px) rotate(-45deg);
   }
   
