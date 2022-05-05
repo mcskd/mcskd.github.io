@@ -361,35 +361,48 @@ header {
   padding-top: 80px;
 }
 
-.lead {
+.scroll {
   position: absolute;
-  bottom: 300px;
+  bottom: 28%;
   right: 70px;
   height: 150px;
-  transform: rotateZ(90deg);
-}
-
-.scroll {
-  display: inline-block;
-  font-family: var(--ff-en-letter);
+  writing-mode: vertical-lr;
   color: var(--clr-neutral-700);
-  font-size: 1.125rem;
 }
 
 .scroll p {
   font-family: var(--ff-en-letter);
-  font-weight: var(--fnt--wt--500);
 }
 
-#lead_bar {
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  width: 80px;
-  height: 2px;
-  margin-left: 16.5px;
-  background-color: var(--clr-neutral-700);
+.scroll::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  height: 100px;
+  background: var(--clr-neutral-700);animation: sdl 2s cubic-bezier(1, 0, 0, 1) infinite;
 }
+
+@keyframes sdl {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0 0;
+  }
+  30% {
+    transform: scale(1, 1);
+    transform-origin: 0 0;
+  }
+  70% {
+    transform: scale(1, 1);
+    transform-origin: 0 100%;
+  }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: 0 100%;
+  }
+}
+
 
 #sec_mainvisual #phone_button {
   z-index: 50;

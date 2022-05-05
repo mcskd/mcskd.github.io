@@ -51,6 +51,10 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
+.humburger.active p {
+  opacity: 0;
+}
+
 .humburger.active .middle {
   opacity: 0;
 }
@@ -62,6 +66,17 @@ img {
 .humburger.active .bottom {
   transform: translateY(-10px) rotate(-45deg);
 }
+
+
+#logo_phrase.active,
+#social.active,
+#nav_button.active {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
 
 
 
