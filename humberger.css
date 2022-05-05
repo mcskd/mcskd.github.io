@@ -46,6 +46,10 @@ img {
   z-index: 101;
 }
 
+.humburger {
+  cursor: pointer;
+}
+
 .humburger .line{
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
